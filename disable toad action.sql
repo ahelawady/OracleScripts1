@@ -6,8 +6,8 @@ end ;
 create or replace trigger restrict_login 
 after logon on database 
 declare 
-flag varchar2(100) := ' '; 
-v_username := '';
+ flag varchar2(100) := ' '; 
+ v_username := '';
 begin 
 
 SELECT SYS_CONTEXT ('USERENV', 'SESSION_USER')  
